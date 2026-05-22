@@ -1,4 +1,7 @@
 import re
+import sys
+import io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 class CustomList:
     def __init__(self, data=None):
